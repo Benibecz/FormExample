@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Absowebly Form</title>
+  </head>
+
+  <body>
+    <div class=""></div>
+    <div class="message successfull__message hidden">
+      <i class="fa-solid fa-circle-check"></i>
+      <p>Your Form Has Been Submitted</p>
+    </div>
+    <form action="">
+      <h3>Submit Comment</h3>
+      <div class="form__content">
+        <div class="message error__message hidden"></div>
+
+        <div>
+          <label for="form__email--address">Your Email:</label>
+          <input
+            name="email"
+            id="form__email--address"
+            type="text"
+            placeholder="email_address@domain-name.com"
+          />
+        </div>
+
+        <div>
+          <label for="form__name">Your Name:</label>
+          <input
+            name="username"
+            id="form__name"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+
+        <div>
+          <label for="form__comment">Your Comment:</label>
+          <textarea
+            name="comment"
+            id="form__comment"
+            cols="40"
+            rows="5"
+            placeholder="Comment Here"
+          ></textarea>
+        </div>
+
+        <div class="checkbox__container">
+          <label for="form__terms--conditions"
+            >You Must Agree to Our
+            <span><a href="#">Terms & Conditions</a></span>
+          </label>
+          <input type="checkbox" id="form__terms--conditions" required />
+        </div>
+      </div>
+
+      <button id="btn__submit" type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
