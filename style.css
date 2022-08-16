@@ -39,10 +39,10 @@ textarea {
   font-size: 1rem;
   min-width: 100%;
 }
-textarea {
+/* textarea {
   min-width: 100%;
   border: none;
-}
+} */
 .checkbox__container {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -91,4 +91,28 @@ button:hover {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+input #form__terms--conditions {
+  max-width: 0.01rem;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 1rem;
+  }
+
+  .checkbox__container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+  .error__message {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    padding: 0 0.5rem;
+  }
+  .message {
+    font-size: 1.15rem;
+    border-radius: 5px;
+  }
 }
